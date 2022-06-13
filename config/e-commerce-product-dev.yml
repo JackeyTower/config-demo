@@ -4,9 +4,9 @@ spring:
   application:
     name: e-commerce-product
   datasource:
-    url: # 你的数据库地址
-    username: # 你的数据库用户名
-    password: # 你的数据库密码
+    url: # jdbc:mysql://localhost:3306/m2b?serverTimezone=GMT%2B8
+    username: # root
+    password: # 57842968
     type: com.alibaba.druid.pool.DruidDataSource
   redis:
     host: r-2zec1x8fklnvti26iqpd.redis.rds.aliyuncs.com # Redis服务器地址
@@ -23,7 +23,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://106.13.127.90:8761/eureka
+      defaultZone: http://localhost:8761/eureka
   instance:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
