@@ -4,9 +4,9 @@ spring:
   application:
     name: e-commerce-admin
   datasource:
-    url: # jdbc:mysql://localhost:3306/m2b?serverTimezone=GMT%2B8
-    username: # root
-    password: # 57842968
+    url:  jdbc:mysql://localhost:3306/m2b?serverTimezone=GMT%2B8
+    username:  root
+    password:  57842968
     type: com.alibaba.druid.pool.DruidDataSource
   redis:
     host: r-2zec1x8fklnvti26iqpd.redis.rds.aliyuncs.com # Redis服务器地址
